@@ -2,19 +2,16 @@
 
 namespace Tests\Feature;
 
-use Tests\TestCase;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use Tests\FeatureTestCase;
 
-class ExampleTest extends TestCase
+class ExampleTest extends FeatureTestCase
 {
-    use RefreshDatabase;
-
     /**
      * A basic test example.
      *
      * @return void
      */
-    public function testBasicTest()
+    function test_basic_test()
     {
         $response = $this->get('/');
 
